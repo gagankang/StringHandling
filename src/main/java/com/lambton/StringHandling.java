@@ -33,7 +33,28 @@ public class StringHandling {
         // Find the index of Toronto
          int index = collegeName.indexOf("Toronto");
          System.out.println("index "  + index);
-         //
+         // to do
+
+
+        char c[] = collegeName.toCharArray();
+        for (int i = 0 ; i <c.length; i++)
+        {
+            System.out.println(c[i]);
+        }
+
+        //reverse
+        char ch[] = collegeName.toCharArray();
+        char rev[] = new char[ch.length];
+        int cnt = 0;
+        for (int i = ch.length - 1 ; i >= 0; i--)
+        {
+            rev[cnt++] = ch[i];
+        }
+        {
+            String reverseString =  new String(rev);
+            System.out.println("Reverse String = " + reverseString);
+        }
+
 
     }
 }
